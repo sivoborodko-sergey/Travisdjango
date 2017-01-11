@@ -1,0 +1,55 @@
+{% if messages %}
+    <div class="main_message_div">
+        <div class="messages">
+
+            <ul class="messages">
+                {% for message in messages %}
+                    <li{% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</li>
+                {% endfor %}
+            </ul>
+
+        </div>
+    </div>
+    <style>
+        .messages {
+            position: absolute;
+            top: 60px;
+            z-index: 101;
+            width: 100%;
+            color: #fff;
+            padding: 0;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .success {
+            background: #25c597;
+            height: 45px;
+            line-height: 45px;
+        }
+
+        .error {
+            background: #f58e15;
+            height: 45px;
+            line-height: 45px;
+        }
+    </style>
+
+    <script>
+        // Закрытие окна с сообщениями
+        $(document).mouseup(function (e) {
+            var container = $(".main_message_div");
+
+            if (!container.is(e.target)
+                    && container.has(e.target).length === 0) {
+                container.hide();
+            }
+        });
+        $(document).ready(
+                setTimeout(function () {
+                    $(".main_message_div").hide();
+                }, 30000)
+        );
+    </script>
+
+{% endif %}

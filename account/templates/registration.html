@@ -1,0 +1,96 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+{% include 'messages.html' %}
+<!--registration page-->
+<section id="reg-page">
+    <div class="reg-container">
+        <form method="post">
+            <div class="col-xs-12 text-center">
+                <h3>Registration</h3>
+            </div>
+            <div class="dual-input col-xs-12">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="title">
+                            <span>First Name:</span>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="first_name" placeholder="Nazar">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-6">
+                        <div class="title">
+                            <span>Last Name:</span>
+                        </div>
+                        <div class="input">
+                            <input type="text" name="last_name" placeholder="Ustymchyk">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="title">
+                    <span>Email:</span>
+                </div>
+                <div class="iput">
+                    <input type="text" name="email" placeholder="ustymchyk.nazar@gmail.com">
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="title">
+                    <span>Username:</span>
+                </div>
+                <div class="iput">
+                    <input type="text" name="user_name" placeholder="ustymchyk.nazar">
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="title">
+                    <span>Password:</span>
+                </div>
+                <div class="iput">
+                    <input type="password" name="password" placeholder="placeholder">
+                </div>
+            </div>
+            <div class="col-xs-12 text-center buttons">
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</section>
+<!--registration page end-->
+<!--log in page-->
+
+<!--log in page end -->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+{#<script src="js/bootstrap.min.js"></script>#}
+</body>
+</html>

@@ -1,0 +1,64 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+</head>
+<body>
+{% include 'messages.html' %}
+
+<section id="log-in-page">
+    <form method="post">
+        <div class="log-in-container">
+            <div class="col-xs-12 text-center">
+                <h3>Log in</h3>
+            </div>
+            <div class="col-xs-12">
+                <div class="title">
+                    <span>Email:</span>
+                </div>
+                <div class="iput">
+                    <input type="text" name="username" placeholder="ustymchyk.nazar">
+                </div>
+            </div>
+            <div class="col-xs-12">
+                <div class="title">
+                    <span>Password:</span>
+                </div>
+                <div class="iput">
+                    <input type="password" name="password" placeholder="placeholder">
+                </div>
+            </div>
+            <div class="col-xs-12 text-center buttons">
+                <button type="submit" class="btn btn-submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+{#<script src="js/bootstrap.min.js"></script>#}
+</body>
+</html>

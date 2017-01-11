@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    font-size: 14px;
+}
+input:focus{
+    outline: none;
+}
+#reg-page {
+    background-color: ;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 100px;
+}
+#reg-page .reg-container{
+    width: 400px;
+    background-color: ;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    border: 1px solid silver;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-radius: 15px;
+}
+
+
+#reg-page .dual-input {
+    float: left;
+    width: 100%;
+    overflow: hidden;
+}
+#reg-page input[type=text],
+#reg-page input[type=password]{
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid silver;
+    line-height: 20px;
+    font-size: 13px;
+    padding-left: 10px;
+    height: 30px;
+
+}
+#reg-page .title > span{
+    color: silver;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: inline-block;
+}
+#reg-page .buttons{
+    margin-top: 15px;
+}
+#reg-page h3{
+    padding-bottom: 5px;
+    margin: 0;
+    color: silver;
+}
+#reg-page .btn-submit{
+    border: 1px solid silver;
+    border-radius: 10px;
+    color: silver;
+    width: 200px;
+}
+#log-in-page {
+    overflow: hidden;
+    text-align: center;
+    margin-top: 100px;
+}
+#log-in-page .log-in-container{
+    width: 400px;
+    background-color: ;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    border: 1px solid silver;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-radius: 15px;
+}
+
+#log-in-page input[type=text],
+#log-in-page input[type=password]{
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid silver;
+    line-height: 20px;
+    font-size: 13px;
+    padding-left: 10px;
+    height: 30px;
+
+}
+#log-in-page .title > span{
+    color: silver;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: inline-block;
+}
+#log-in-page .buttons{
+    margin-top: 15px;
+}
+#log-in-page h3{
+    padding-bottom: 5px;
+    margin: 0;
+    color: silver;
+}
+#log-in-page .btn-submit{
+    border: 1px solid silver;
+    border-radius: 10px;
+    color: silver;
+    width: 200px;
+}
+#send-msg{
+    overflow: hidden;
+    text-align: center;
+    margin-top: 100px;
+}
+#send-msg .send-msg-container{
+    width: 400px;
+    background-color: ;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: left;
+    border: 1px solid silver;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    border-radius: 15px;
+}
+#send-msg h3{
+    padding-bottom: 5px;
+    margin: 0;
+    color: silver;
+}
+#send-msg .btn-submit{
+    border: 1px solid silver;
+    border-radius: 10px;
+    color: silver;
+    width: 200px;
+}
+#send-msg .buttons{
+    margin-top: 15px;
+}
+#send-msg input[type=text],
+#send-msg input[type=password],
+#send-msg textarea{
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid silver;
+    line-height: 20px;
+    font-size: 13px;
+    padding-left: 10px;
+    height: 30px;
+
+}
+#send-msg textarea{
+    height:90px;
+    resize: vertical;
+}
+#send-msg .title > span{
+    color: silver;
+    font-weight: 700;
+    padding-left: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: inline-block;
+}
